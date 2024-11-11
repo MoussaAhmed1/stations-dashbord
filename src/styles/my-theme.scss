@@ -1,0 +1,59 @@
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$m2-azure-palette: (
+  50: #f2f2f2,
+  100: #e6e6e6,
+  200: #d9d9d9,
+  300: #F9F5F3,
+  400: #F4DBD4,
+  500: #FF7F5C,
+  600: #cc5939,
+  700: #994429,
+  800: #662919,
+  900: #331409,
+  A100: #ffd6cc,
+  A200: #ffc299,
+  A400: #ff9966,
+  A700: #ff6633,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+
+$my-primary: mat.m2-define-palette($m2-azure-palette, 500);
+$my-accent: mat.m2-define-palette(mat.$m2-blue-palette, A200, A100, A400);
+
+$my-theme: mat.m2-define-light-theme((
+ color: (
+   primary: $my-primary,
+   accent: $my-accent,
+ ),
+ density: 0,
+));
+
+// Emit theme-dependent styles for common features used across multiple components.
+@include mat.core-theme($my-theme);
+
+// Emit styles for MatButton based on `$my-theme`. Because the configuration
+// passed to `m2-define-light-theme` omits typography, `button-theme` will not
+// emit any typography styles.
+@include mat.button-theme($my-theme);
+
+// Include the theme mixins for other components you use here.
+@include mat.all-component-themes($my-theme);
