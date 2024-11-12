@@ -1,0 +1,36 @@
+<div class="sales-by-station">
+  <h2 style="text-align: center">Sales by Station</h2>
+  @for (station of stationData; track $index) {
+  <div class="card">
+    <div style="display: flex; align-items: center">
+      <img
+        src="/assets/images/gas-station-svgrepo-com.svg"
+        alt=""
+        width="43.57"
+        height="43.57"
+      />
+      <div style="display: flex; justify-content: space-between; width: 100%">
+        <h4>{{ station.name }}</h4>
+        <h4 [style]="station.value == 'NM' ? 'color: #B9CDE2' : ''">{{ station.value == "NM" ? "N/A" : station.value + " m" }}</h4>
+      </div>
+    </div>
+    <div>
+      @if (station.value !== 'NM') {
+
+      <mat-progress-bar
+        mode="determinate"
+        value="{{ station.value }}"
+        color="primary"
+        value="{{ station.progress }}"
+      ></mat-progress-bar>
+      } @else {
+      <mat-progress-bar
+        mode="determinate"
+        value="{{ station.value }}"
+        color="accent"
+      ></mat-progress-bar>
+      }
+    </div>
+  </div>
+  }
+</div>

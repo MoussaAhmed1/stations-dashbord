@@ -12,7 +12,9 @@ export class HourlySalesComponent {
     accessibility: {
       enabled: false
     },
-    chart : {type : 'polar', plotShadow:false},
+    chart : {type : 'polar', plotShadow:false
+      , backgroundColor: 'rgba(0, 0, 0, 0)'
+    },
 
     title: {
         text: 'Hourly Sales'

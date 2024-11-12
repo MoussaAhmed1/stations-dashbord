@@ -3,6 +3,7 @@ import { DashboardFiltersComponent } from '../../components/filters/dashboard-fi
 import { MatGridListModule } from '@angular/material/grid-list';
 import { StatisticsComponent } from "../../components/statistics/statistics/statistics.component";
 import { HourlySalesComponent } from '../../components/hourly-sales/hourly-sales.component';
+import { SalesByStationComponent } from '../../components/sales-by-station/sales-by-station.component';
 
 @Component({
   selector: 'app-dashbord',
@@ -11,7 +12,8 @@ import { HourlySalesComponent } from '../../components/hourly-sales/hourly-sales
     DashboardFiltersComponent,
     MatGridListModule,
     StatisticsComponent,
-    HourlySalesComponent
+    HourlySalesComponent,
+    SalesByStationComponent
 ],
   templateUrl: './dashbord.component.html',
   styleUrl: './dashbord.component.scss'
