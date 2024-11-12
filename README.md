@@ -1,27 +1,27 @@
 # StationsDashboard
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.2.
 
-## Development server
+A simple and interactive dashboard for monitoring station data. Built with Angular, Angular Material, and Angular Highcharts, this project provides visual insights into station metrics using a standalone strategy for streamlined, modular components.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Table of Contents
 
-## Code scaffolding
+- [Features](#features)
+- [Technologies](#technologies)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Future Enhancements](#future-enhancements)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Features
 
-## Build
+- **Station Overview:** Displays essential information for each station, such as total sales, transactions, and compression state.
+- **Interactive Charts:** Highcharts visualizations to analyze metrics like sales trends and transaction counts.
+- **Material Design UI:** Enhanced user experience with Angular Material components.
+- **Standalone Components:** Streamlined, modular approach using Angular's standalone strategy.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Technologies
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- **Angular** - Front-end framework
+- **Angular Material** - UI components with a Material Design look and feel
+- **Angular Highcharts** - Interactive data visualizations
+- **Standalone Strategy** - Modular design for components and services
