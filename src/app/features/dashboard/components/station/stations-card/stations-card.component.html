@@ -1,0 +1,45 @@
+<div class="sales-by-station">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title-group style="">
+        <mat-card-title style="display: flex; align-items: center">
+          <img
+            src="/assets/images/gas-station-svgrepo-com-5.svg"
+            alt=""
+            width="43.57"
+            height="43.57"
+          />
+          <span>{{ stationData.name }}</span>
+        </mat-card-title>
+          <mat-icon>more_horiz</mat-icon>
+      </mat-card-title-group>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+      <div class="card-content-row">
+        <h5>Total Sales:</h5>
+        <span>{{ stationData.totalSales }}</span>
+      </div>
+      <div class="card-content-row">
+        <h5>Total Value:</h5>
+        <span>{{ stationData.totalValue }}</span>
+      </div>
+      <div class="card-content-row">
+        <h5>Compression State:</h5>
+        <span>{{ stationData.compressionState }}</span>
+      </div>
+      <div class="card-content-row">
+        <h5>Total Transaction Count:</h5>
+        <span>{{ stationData.totalTransactionCount }}</span>
+      </div>
+      <div class="card-content-row">
+        <h5>Max Transaction / Hour:</h5>
+        <span>{{ stationData.maxTransactionPerHour }}</span>
+      </div>
+      <div class="card-content-row">
+        <h5>Max Transaction Date-Time:</h5>
+        <span>{{ stationData.maxTransactionDateTime }}</span>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

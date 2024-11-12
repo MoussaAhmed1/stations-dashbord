@@ -1,0 +1,5 @@
+<div class="container">
+    @for (station of stations; track station.id) {
+        <app-stations-card [stationData]="station"></app-stations-card>
+    }
+</div>

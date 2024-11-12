@@ -17,33 +17,33 @@ export class StatisticsComponent {
       currency: 'EGP',
       rising: false,
       percentage: '2%',
-      superset: null,
+      superset: "",
     },
     {
       label: 'Total Sales',
       value: '20,000',
-      currency: 'm',
+      currency: 'm³',
       rising: true,
-      percentage: '50 m',
+      percentage: '50 m³',
       superset: 3,
 
     },
     {
       label: 'Avg Sales',
       value: '20,000',
-      currency: 'm',
+      currency: 'm³',
       rising: false,
-      percentage: '50 m',
+      percentage: '50 m³',
       superset: 3,
 
     },
     {
       label: 'Total Transaction Count',
       value: '1567',
-      currency: null,
+      currency: "",
       rising: true,
       percentage: '20',
-      superset: null,
+      superset: "",
 
     },
   ];

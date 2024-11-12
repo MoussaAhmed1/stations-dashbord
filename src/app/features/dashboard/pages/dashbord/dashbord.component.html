@@ -1,15 +1,30 @@
 <app-dashboard-filters></app-dashboard-filters>
-<mat-grid-list cols="3" rowHeight="200px">
+<mat-grid-list cols="3" rowHeight="190px">
     <mat-grid-tile colspan="2" rowspan="1">
         <app-statistics></app-statistics>
     </mat-grid-tile>
     <mat-grid-tile rowspan="2">
         <app-hourly-sales></app-hourly-sales>
     </mat-grid-tile >
-    <mat-grid-tile colspan="2" rowspan="2">
-        3
+    <mat-grid-tile colspan="2" rowspan="3">
+        <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="end">
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <mat-icon class="example-tab-icon">signal_cellular_alt</mat-icon>
+                    GRAPH
+                  </ng-template>
+                  <app-station-activites></app-station-activites>
+                </mat-tab>
+                <mat-tab>
+                    <ng-template mat-tab-label>
+                        <mat-icon class="example-tab-icon">drag_handle</mat-icon>
+                        LIST
+                      </ng-template>
+                <app-stations-list></app-stations-list>
+              </mat-tab>
+          </mat-tab-group>
     </mat-grid-tile>
-    <mat-grid-tile rowspan="2" >
+    <mat-grid-tile  rowspan="2" >
         <app-sales-by-station>
         </app-sales-by-station>
     </mat-grid-tile>

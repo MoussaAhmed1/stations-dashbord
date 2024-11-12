@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { CubicMeterPipe } from '../../../../core/pipes/cubic-meter.pipe';
 
 @Component({
   selector: 'app-sales-by-station',
@@ -9,10 +10,11 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
   imports: [
     MatCardModule,
     MatIconModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    CubicMeterPipe,
   ],
   templateUrl: './sales-by-station.component.html',
-  styleUrl: './sales-by-station.component.scss'
+  styleUrl: './sales-by-station.component.scss',
 })
 export class SalesByStationComponent {
   stationData: any[] = [
