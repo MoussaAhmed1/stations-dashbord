@@ -1,0 +1,11 @@
+<div class="card">
+  <div class="value">
+    <span class="amount">{{ statics?.value }}</span>
+    <span class="currency">{{ " " + statics?.currency }}</span>
+  </div>
+  <div class="label">{{ statics?.label }}</div>
+  <div class="change" [class]="statics?.rising ? 'rising' : 'falling'">
+    <span class="icon">{{ !statics?.rising ? "▼" : "▲" }}</span>
+    <span>{{  statics?.percentage ?? ""}}</span>
+  </div>
+</div>

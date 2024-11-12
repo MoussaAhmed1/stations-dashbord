@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 0 2.5rem ;
+
+    .left-section, .right-section , .center-section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.5rem;
+      div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5rem;
+      }
+    }
+    
+
+    mat-card-content{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      color: #3D5161;
+      font-weight: normal !important;
+      .lable {
+        width: 64px; /* Adjust as needed */
+        word-break: break-word;
+      }
+    }
+
+    .mat-button-toggle {
+      color: #3D5161 !important;
+  }
+    .mat-button-toggle-checked {
+      background-color: #FF7F5C;
+      color: #fff !important;
+    }
+
+
+    .mat-datepicker-toggle{
+      color: #007de2 !important;
+    }
+    mat-form-field{
+      width: 180px;
+      display: flex;
+      align-items: center;
+      padding-top: 8px;
+    }
+  }
+  
+
+  

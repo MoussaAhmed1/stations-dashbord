@@ -1,0 +1,73 @@
+<div class="container">
+  <div class="left-section">
+    <mat-card-content>
+      <div
+        matBadge="1"
+        matBadgeSize="small"
+        class="value"
+        matBadgePosition="below before"
+      >
+        <img src="/assets/images/gas-station-svgrepo-com.svg" alt="" />
+      </div>
+      <h1>2/3</h1>
+      <small class="lable">Monitored Stations</small>
+    </mat-card-content>
+    <mat-card-content>
+      <div
+        matBadge="1"
+        matBadgeSize="small"
+        class="value"
+        matBadgePosition="below before"
+      >
+        <img
+          src="/assets/images/recycle.svg"
+          alt=""
+          width="43.57"
+          height="43.57"
+        />
+      </div>
+      <h1 class="value">20s</h1>
+      <small class="lable">Last Update</small>
+    </mat-card-content>
+  </div>
+
+  <div class="center-section">
+    <div>
+      <mat-button-toggle-group
+        name="fontStyle"
+        aria-label="Font Style"
+        appearance="standard"
+        selected="today"
+        value="today"
+      >
+        <mat-button-toggle value="today">TODAY</mat-button-toggle>
+        <mat-button-toggle value="yesterday">YESTERDAY</mat-button-toggle>
+        <mat-button-toggle value="lastweek">LAST WEEK</mat-button-toggle>
+      </mat-button-toggle-group>
+    </div>
+  </div>
+
+  <div class="right-section">
+    <div>
+      <mat-form-field appearance="outline">
+        <mat-label>Start date - time</mat-label>
+        <input matInput [matDatepicker]="picker" />
+        <mat-datepicker-toggle
+          matIconSuffix
+          [for]="picker"
+        ></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>End date - time</mat-label>
+        <input matInput [matDatepicker]="picker2" />
+        <mat-datepicker-toggle
+          matIconSuffix
+          [for]="picker2"
+        ></mat-datepicker-toggle>
+        <mat-datepicker #picker2></mat-datepicker>
+      </mat-form-field>
+    </div>
+  </div>
+</div>
