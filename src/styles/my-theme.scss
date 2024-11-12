@@ -43,6 +43,7 @@ $my-theme: mat.m2-define-light-theme((
  color: (
    primary: $my-primary,
    accent: $my-accent,
+   tertiary: $my-primary,
  ),
  density: 0,
 ));

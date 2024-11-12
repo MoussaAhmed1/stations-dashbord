@@ -8,13 +8,13 @@
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
 @include mat.core();
-
+$background: #F9F5F3;
 // Define the theme object.
 $stations-dashboard-theme: mat.define-theme((
   color: (
     theme-type: light,
-    primary: mat.$azure-palette,
-    tertiary: mat.$blue-palette,
+    primary: mat.$orange-palette,
+    tertiary: mat.$orange-palette,
   ),
   density: (
     scale: 0,
@@ -36,5 +36,5 @@ $stations-dashboard-theme: mat.define-theme((
 // @include mat.color-variants-backwards-compatibility($stations-dashboard-theme);
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+html, body { height: 100%;background-color: $background; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
